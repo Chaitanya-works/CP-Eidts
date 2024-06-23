@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - CP Edits</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+</head>
+
+<body>
+    <!-- /// wrapper starts /// -->
+    <div class="wrapper">
+        <div class="circle-top circle"></div>
+        <div class="circle-bottom circle"></div>
+
+        <!-- /// card starts /// -->
+        <div class="card">
+            <img src="images/IMG_20231225_215121.jpg" alt="user image">
+            <h2 class="user-name">Chaitanya&nbsp;Pawar</h2>
+            <h3 class="user-designation">Video Editor</h3>
+
+            <div class="buttons-group">
+                <button id="share-btn" onclick="openModal()">
+                    <i class="fa-solid fa-share"></i>
+                    CHECK MY WORK
+                </button>
+                <button id="follow-btn" onclick="openGit()">GET ONBOARD !</button>
+            </div>
+        </div>
+        <!-- /// card ends /// -->
+    </div>
+    <!-- /// wrapper ends /// -->
+
+
+    <!-- /// profile Modal starts /// -->
+    <div class="modal" id="profile-modal">
+        <!-- modal header -->
+        <div class="modal-header">
+            <h2 class="modal-title" >Portfolio</h2>
+            <div>
+                <i class="fa-solid fa-xmark modal-close" id="profile-modal-close" onclick="closeModal()"></i>
+            </div>
+        </div>
+
+        <!-- modal body -->
+        <div class="modal-body">
+            <h3>Check out:</h3>
+
+            <div class="social-icons">
+                <a href="https://drive.google.com/drive/u/2/folders/1xRWgcVvJVPNllesavRREn7qVNF1CrII2" id="facebook-icon" class="icon" target="_blank">
+                    <p>>Long<br>Videos</p>
+                    
+                </a>
+                
+                <a href="https://drive.google.com/drive/u/2/folders/1j7eMj_hEPsoB1pzr268-7DtzvKuJiOVr" id="twitter-icon" class="icon" target="_blank">
+                    <p>>Short <br>Videos</p>
+
+                </a>
+                
+                <a href="reviews.html" id="instagram-icon" class="icon">
+                    <p>Reviews</p>
+                </a>
+                
+                <a href="https://drive.google.com/drive/u/2/folders/1fiYqpXj99NOfKf-55UeOLxSobG4HcrwB" id="whatsapp-icon" class="icon">
+                    <p>Editing <br>&nbsp;&nbsp;Pack</p>
+                </a>
+                
+                <a href="https://editbycp.my.canva.site/about-me" id="telegram-icon" class="icon">
+                    <p>About <br>&nbsp;&nbsp;Me</p>
+                </a>
+                
+                
+            </div>
+        </div>
+    </div>
+    <!-- /// profile Modal ends /// -->
+
+
+    <!-- /// follow Modal starts /// -->
+     <div class="modal" id="follow-modal">
+        <!-- modal header -->
+        <div class="modal-header">
+            <h2 class="modal-title">CONTACT AT</h2>
+            <div onclick="closeGit()">
+                <i class="fa-solid fa-xmark modal-close" id="follow-modal-close"></i>
+            </div>
+        </div>
+
+        <!-- modal body -->
+        <div class="modal-body">
+            <h3><a href="mailto:chaitanya.works24@gmail.com?subject=About video editing services&body=Hi! I would like to opt for your services">chaitanya.works24@gmail.com</a></h3>
+
+            <div class="social-icons">
+                <a href="https://wa.me/917058088895?text=Hi!%20I%20would%20like%20to%20opt%20for%20video%20editing%20services." id="github-icon" class="icon" target="_blank">
+                    <p>Whats <br>&nbsp;App</p>
+                </a>
+
+                <a href="mailto:chaitanya.works24@gmail.com?subject=About video editing services&body=Hi! I would like to opt for your services" id="follow-unfollow" target="_blank">
+                    Hire Now!
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /// follow Modal ends /// -->
+
+    <!-- overlay -->
+    <div class="overlay" id="overlay" onclick="closeModal(); closeGit()"></div>
+
+    <!-- custom script -->
+    <script src="script.js"></script>
+</body>
+
+</html> 
